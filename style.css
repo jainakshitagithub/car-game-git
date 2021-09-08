@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+}
+body{
+    background-image: url("background-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.startBox{
+    cursor:pointer;
+}
+.hide{
+    display:none;
+}
+.playcar , .enemyCar{
+    width:40px;
+    height: 12vh;
+    position:absolute;
+    left:0px;
+    top:450px;
+    background-color: white;
+    background-image: url("carimg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.gameArea{
+    position:relative;
+    overflow: hidden;
+    width:400px;
+    height: 100vh;
+    background-color:#2f3640;
+    margin:auto;
+}
+.roadline{
+    position:absolute;
+    height:100px;
+    width:20px;
+    background-color: rgb(245, 249, 250);
+    margin-left:190px;
+}
+.startBox{
+    z-index: 1;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:550px;
+    background-color: rgb(179, 179, 221);
+    border-color: white;
+    box-shadow: 4px 4px 5px rgb(172, 172, 226);
+    margin:5px;
+    font-size:20px ;
+    color:black;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.scoreBox{
+    z-index: 1;
+    position:absolute;
+    width:550px;
+    background-color: pink;
+    border-color: black;
+    box-shadow: 4px 4px 5px pink;
+    margin:5px;
+    font-size:20px ;
+    color:white;
+    text-align: center;
+    /* height:100px; */
+    line-height: 100px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
